@@ -73,5 +73,22 @@ namespace RegularExoressions
                 Console.WriteLine(" Mobile Number is not valid");
             }
         }
+
+        public void Password()
+        {
+            string password = "^[a-zA-Z0-9]{8,}$";
+            Console.WriteLine("Enter Passwrod -(password must be 8 characters):");
+            string pass = Console.ReadLine();
+            Regex regex = new Regex(password);
+            if (regex.IsMatch(pass))
+            {
+                Console.WriteLine("password is valid");
+            }
+            else
+            {
+                Console.WriteLine("password is not valid");
+
+            }
+        }
     }
 }

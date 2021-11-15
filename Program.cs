@@ -14,9 +14,10 @@ namespace RegularExoressions
 
             Registration obj1 = new Registration();
             obj1.FirstName();
-           obj1.LastName();
-           obj1.Email();
-            obj1.MobileNumber();
+             obj1.LastName();
+             obj1.Email();
+             obj1.MobileNumber();
+            obj1.Password();
             Console.ReadLine();
         }
     }
