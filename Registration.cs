@@ -76,8 +76,8 @@ namespace RegularExoressions
 
         public void Password()
         {
-            string password = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8}$";
-            Console.WriteLine("Enter Passwrod -(password must be 8 characters,should have 1 uppercase):");
+            string password = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
+            Console.WriteLine("Enter Passwrod -(password must be 8 characters,should have 1 uppercase,Should have at least 1 numeric number):");
             string pass = Console.ReadLine();
             Regex regex = new Regex(password);
             if (regex.IsMatch(pass))
