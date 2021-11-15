@@ -11,6 +11,9 @@ namespace RegularExoressions
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to regular expressions");
+
+            Registration obj1 = new Registration();
+            obj1.FirstName();
             Console.ReadLine();
         }
     }
