@@ -40,5 +40,21 @@ namespace RegularExoressions
 
             }
         }
+
+        public void Email()
+        {
+            string email = @"^[a-zA-Z0-9]+[+-._]?[a-zA-Z0-9]*[+-._]?[a-zA-Z0-9]+@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,3}[.]?[a-zA-Z]{0,3}$";
+            Console.WriteLine("Enter your email:");
+            string mail = Console.ReadLine();
+            Regex regex = new Regex(email);
+            if (regex.IsMatch(mail))
+            {
+                Console.WriteLine("email is valid");
+            }
+            else
+            {
+                Console.WriteLine("emailis not valid");
+            }
+        }
     }
 }
