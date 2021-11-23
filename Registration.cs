@@ -57,7 +57,6 @@ namespace RegularExoressions
             }
         }
 
-<<<<<<< HEAD
 
         public void MobileNumber()
         {
@@ -90,7 +89,7 @@ namespace RegularExoressions
                 Console.WriteLine("password is not valid");
 
             }
-=======
+        }
         public void ValidateEmail()
         {
             string email = @"^[a-zA-Z0-9]+[+-._]?[a-zA-Z0-9]*[+-._]?[a-zA-Z0-9]+@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,3}[.]?[a-zA-Z]{0,3}$";
@@ -111,7 +110,6 @@ namespace RegularExoressions
                 }
             }
 
->>>>>>> UC3-Email
         }
     }
 }
